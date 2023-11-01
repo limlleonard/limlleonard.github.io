@@ -1,8 +1,10 @@
 :root {
   --main-white: #f0f0f0;
-  --bp-purple: #6C03A8;
-  /* b931be */
+  --bp-purple: #b931be;
+  /* b931be 6C03A8 */
   --bp-blue-light: #29D5FF;
+  --bg1: #A6BA6D;
+  --bg2: #647891;
   --height-nav:7.5rem;
   --main-gray: #303841;
 }
@@ -54,7 +56,7 @@ img {
   left: 0;
   width: 100%;
   height: var(--height-nav);
-  background: var(--bp-purple);
+  background: var(--bg2);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 3;
 }
@@ -122,7 +124,8 @@ img {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: linear-gradient(90deg, var(--bp-blue-light), var(--bp-purple));
+  background: var(--bg1);
+  /* linear-gradient(90deg, var(--bp-blue-light), var(--bp-purple)); */
 }
 .projects-section-header {
   max-width: 640px;
@@ -182,7 +185,7 @@ img {
   height: 100vh;
   /* padding: 0 2rem; */
   background: var(--main-gray);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .contact-section-header > h2 {
   font-size: 6rem;
