@@ -32,7 +32,7 @@ h1,h2 {
   text-align: center;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 h2 {
   font-size: 4.2rem;
@@ -66,8 +66,9 @@ img {
 }
 .nav-list a {
   display: block;
+  line-height: var(--height-nav);
   font-size: 2rem;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 .nav-list a:hover {
   background: #b9914e;
@@ -77,11 +78,12 @@ img {
   display: grid;
   grid-template-rows: 60% 40%;
   align-items: center;
-  height: calc(100vh-var(--height-nav));
+  /* height: calc(100vh-var(--height-nav)); */
   height: 100vh;
+  min-height: 100vh;
   background-color: #222;
   width: 100%;
-  padding-top: var(--height-nav);
+  margin-top: var(--height-nav);
 }
 .container-img{
   display: flex;
