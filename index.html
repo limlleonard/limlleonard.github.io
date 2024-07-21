@@ -31,40 +31,36 @@
     </div>
     <div class="container-welcome-text">
       <h1>Hallo, Ich bin Menglin Li</h1>
-      <p id="ds">Ein Data Scientist</p>
+      <p id="ds">Ein Entwickler</p>
     </div>
   </section>
 
   <section id="projects" class="projects-section">
     <h2 class="projects-section-header">Das sind meine Projekte</h2>
     <div class="projects-grid">
-      <a href="https://deepppt.onrender.com" target="_blank" class="project project-tile">
+      <a href="https://deepppt.onrender.com" target="_blank" class="project">
         <img class="project-image" src="./img1/deepppt.png" alt="project" />
         <p class="project-title">PPT Übersetzer</p>
       </a>
-      <a href="https://spiral-game.onrender.com" target="_blank" class="project project-tile">
+      <a href="https://spiral-game.onrender.com" target="_blank" class="project">
         <img class="project-image" src="./img1/spiral.png" alt="project" />
         <p class="project-title">Spiral malen Spiel</p>
       </a>
-      <a href="https://pubs.rsc.org/en/content/articlelanding/2020/sm/d0sm00460j#!" target="_blank"
-        class="project project-tile">
-        <img class="project-image" src="./img1/statistic2.png?raw=true" alt="project-image" />
-        <p class="project-title">Regressionsanalyse 1</p>
-      </a>
-
-      <a href="https://www.nature.com/articles/s42005-018-0025-4/" target="_blank" class="project project-tile">
-        <img class="project-image" src="./img1/statistic1.png?raw=true" alt="project" />
-        <p class="project-title">Regressionsanalyse 2</p>
-      </a>
-      <a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/slct.202003940" target="_blank"
-        class="project project-tile">
-        <img class="project-image" src="./img1/tracking.png?raw=true" alt="project" />
+      <a href="https://github.com/limlleonard/project_personal/tree/main/g2_five_in_a_line" target="_blank"
+        class="project">
+        <img class="project-image" src="./img1/g2_five.png?raw=true" alt="project" />
         <p class="project-title">
-          Objekte Erkennung und Verfolgung
+          Five in a row (Minimax algorithm)
         </p>
       </a>
+
+      <a href="https://github.com/limlleonard/project_personal/tree/main/g3_puzzle15" target="_blank"
+        class="project">
+        <img class="project-image" src="./img1/g3_p15.png?raw=true" alt="project" />
+        <p class="project-title">Puzzle 15 (A star algorithm)</p>
+      </a>
       <a href="https://github.com/limlleonard/project_personal/tree/main/schule2_trigonometry" target="_blank"
-        class="project project-tile">
+        class="project">
         <img class="project-image" src="./img1/trigonometrie.png?raw=true" alt="project" />
         <p class="project-title">
           <!-- <span class="code">&lt;</span> -->
@@ -73,23 +69,28 @@
         </p>
       </a>
       <a href="https://github.com/limlleonard/project_personal/tree/main/schule3_construction" target="_blank"
-        class="project project-tile">
+        class="project">
         <img class="project-image" src="./img1/kegelschnitt.png?raw=true" alt="project" />
         <p class="project-title">
           Kegelschnitt Konstruktion Anweisung
         </p>
       </a>
-      <a href="https://github.com/limlleonard/project_personal/tree/main/g2_five_in_a_line" target="_blank"
-        class="project project-tile">
-        <img class="project-image" src="./img1/g2_five.png?raw=true" alt="project" />
-        <p class="project-title">
-          Five in a row (Minimax algorithm)
-        </p>
+      
+      <a href="https://pubs.rsc.org/en/content/articlelanding/2020/sm/d0sm00460j#!" target="_blank"
+        class="project">
+        <img class="project-image" src="./img1/statistic2.png?raw=true" alt="project-image" />
+        <p class="project-title">Regressionsanalyse 1</p>
       </a>
-      <a href="https://github.com/limlleonard/project_personal/tree/main/g3_puzzle15" target="_blank"
-        class="project project-tile">
-        <img class="project-image" src="./img1/g3_p15.png?raw=true" alt="project" />
-        <p class="project-title">Puzzle 15 (A star algorithm)</p>
+      <a href="https://www.nature.com/articles/s42005-018-0025-4/" target="_blank" class="project">
+        <img class="project-image" src="./img1/statistic1.png?raw=true" alt="project" />
+        <p class="project-title">Regressionsanalyse 2</p>
+      </a>
+      <a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/slct.202003940" target="_blank"
+        class="project">
+        <img class="project-image" src="./img1/tracking.png?raw=true" alt="project" />
+        <p class="project-title">
+          Objekte Erkennung und Verfolgung
+        </p>
       </a>
     </div>
 
@@ -102,7 +103,7 @@
   </section>
   <section id="cv" class="cv-section">
     <div class="container-cv">
-      <h2>Curriculum vitae</h2>
+      <h2 class="projects-section-header">Curriculum vitae</h2>
       <div class="container-cv">
         <h3>Berufliche Erfahrungen</h3>
         <table>
@@ -116,9 +117,36 @@
             <td></td>
             <td>BearingPoint GmbH</td>
           </tr>
-          <tr class="empty-row"></tr>
           <tr>
             <td>Projekte:</td>
+            <td class="toggle" onclick="toggleRows(this, 3)" title="Klicken zu expandieren">Generative AI Tool <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Automatische Identifikation von bestimmten öffentlichen Ausschreibungen
+              und Herunterladen von Unterlagen</td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Informationsextraktion und Erstellung von Zusammenfassungen mit Large
+              Language Models</td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Entwicklung der Benutzeroberfläche und der Flask-API</td>
+          </tr>
+          <tr class="empty-row hidden"></tr>
+          <tr>
+            <td></td>
+            <td class="toggle" onclick="toggleRows(this, 1)" title="Klicken zu expandieren">PowerPoint Übersetzer <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Entwicklung einer Webapp zur automatischen Übersetzung von PowerPoint-Unterlagen auf Azure</td>
+          </tr>
+          <tr class="empty-row hidden"></tr>
+          <tr>
+            <td></td>
             <td class="toggle" onclick="toggleRows(this, 5)" title="Klicken zu expandieren">KI-basierte Anti-Geldwäsche Optimierung <span class="triangle">&#9662;</span></td>
           </tr>
           <tr class="hidden">
@@ -140,39 +168,11 @@
           <tr class="empty-row hidden"></tr>
           <tr>
             <td></td>
-            <td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">Entwicklung eines Ausschreibungstools <span class="triangle">&#9662;</span></td>
-          </tr>
-          <tr class="hidden">
-            <td></td>
-            <td>- Entwicklung einer KI-basierten Applikation zur automatischen Identifikation von bestimmten
-              öffentlichen Ausschreibungen inklusive Ausgabe einer inhaltlichen Zusammenfassung</td>
-          </tr>
-          <tr class="empty-row hidden"></tr>
-          <tr>
-            <td></td>
-            <td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">CodeOrigin <span class="triangle">&#9662;</span></td>
+            <td class="toggle" onclick="toggleRows(this, 1)" title="Klicken zu expandieren">CodeOrigin <span class="triangle">&#9662;</span></td>
           </tr>
           <tr class="hidden">
             <td></td>
             <td> - Entwicklung eines Algorithmus zur automatischen Quellcode-Identifikation</td>
-          </tr>
-          <tr class="empty-row hidden"></tr>
-          <tr>
-            <td></td>
-            <td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">Generative AI Tool <span class="triangle">&#9662;</span></td>
-          </tr>
-          <tr class="hidden">
-            <td></td>
-            <td> - Entwicklung der Benutzeroberfläche und der Flask-API eines generativen AI Tools</td>
-          </tr>
-          <tr class="empty-row hidden"></tr>
-          <tr>
-            <td></td>
-            <td class="toggle" onclick="toggleRows(this, 1)" title="Klicken zu expandieren">PowerPoint Übersetzer <span class="triangle">&#9662;</span></td>
-          </tr>
-          <tr class="hidden">
-            <td></td>
-            <td> - Entwicklung einer Webapp zur automatischen Übersetzung von PowerPoint-Unterlagen auf Azure</td>
           </tr>
           <tr class="empty-row"></tr>
           <tr>
@@ -265,7 +265,8 @@
         </table>
       </div>
       <h3>Fertigkeiten und Kenntnisse</h3>
-      <div class=""></div>
+      <table id="table-skill">
+      </table>
     </div>
   </section>
   <section id="contact" class="contact-section">
@@ -277,7 +278,7 @@
         GitHub</a>
       <a href="https://www.linkedin.com/in/menglin-li-666a7792/" target="_blank" class="btn contact-details"><i
           class="fab fa-github"></i> Linkedin</a>
-      <a id="btn-email" title="menglin.li@bearingpoint.com" href="E-Mail: menglin.li@bearingpoint.com"
+      <a id="btn-email" title="limlleonard@gmail.com" href="E-Mail: limlleonard@gmail.com"
         class="btn contact-details"><i class="fas fa-at"></i> E-Mail
       </a>
       <a title="Tel: 0151 7219 79XX" href="Tel:0151 7219 79XX" class="btn contact-details"><i
