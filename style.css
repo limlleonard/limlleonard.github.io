@@ -137,7 +137,7 @@ img {
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
@@ -178,6 +178,46 @@ img {
 .btn-show-all:hover {
   background: var(--bp-purple);
   transform: translateY(8px);
+}
+
+.cv-section {
+  padding: 10rem 10%;
+  background: blue;
+}
+.cv-section h3 {
+  padding: 1rem 0;
+  border: 1px solid red;
+}
+
+table {
+  width: 100%;
+  border: 1px solid red;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+}
+th.left {
+  width: 20%;
+}
+th.right{
+  width: 80%;
+}
+.empty-row {
+  height: 2rem;
+}
+.toggle {
+  cursor: pointer;
+}
+.hidden {
+  display: none; /* for toggle */
+}
+.triangle {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.fett {
+  font-weight: bold;
 }
 .contact-section {
   display: flex;

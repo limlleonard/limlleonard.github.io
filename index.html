@@ -1,170 +1,295 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<nav id="navbar" class="nav">
-  <ul class="nav-list">
-    <li>
-      <a href="#welcome-section">Willkommen</a>
-    </li>
-    <li>
-      <a href="#projects">Projekte</a>
-    </li>
-    <!-- <li>
-      <a href="#cv">CV</a>
-    </li> -->
-    <li>
-      <a href="#contact">Kontakt</a>
-    </li>
-  </ul>
-</nav>
+<body>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">Willkommen</a>
+      </li>
+      <li>
+        <a href="#projects">Projekte</a>
+      </li>
+      <li>
+        <a href="#cv">CV</a>
+      </li>
+      <li>
+        <a href="#contact">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
 
-<section id="welcome-section" class="welcome-section">
-  <div class="container-img">
-    <img
-      class="welcome-image"
-      src="./img1/you_want_me.png?raw=true"
-      alt="welcome"
-    />
-    <h2 id='ywm'>You want me</h2>
-  </div>
-  <div class="container-welcome-text">
-    <h1>Hallo, Ich bin Menglin Li</h1>
-    <p id="ds">Ein Data Scientist</p>
-  </div>
-</section>
+  <section id="welcome-section" class="welcome-section">
+    <div class="container-img">
+      <img class="welcome-image" src="./img1/you_want_me.png?raw=true" alt="welcome" />
+      <h2 id='ywm'>You want me</h2>
+    </div>
+    <div class="container-welcome-text">
+      <h1>Hallo, Ich bin Menglin Li</h1>
+      <p id="ds">Ein Data Scientist</p>
+    </div>
+  </section>
 
-<section id="projects" class="projects-section">
-  <h2 class="projects-section-header">Das sind meine Projekte</h2>
-  <div class="projects-grid">
-    <a href="https://deepppt.onrender.com"
-      target="_blank" class="project project-tile">
-      <img class="project-image" src="./img1/deepppt.png" alt="project"/>
-      <p class="project-title">PPT Übersetzer</p>
-    </a>
-    <a href="https://spiral-game.onrender.com"
-      target="_blank" class="project project-tile">
-      <img class="project-image" src="./img1/spiral.png" alt="project"/>
-      <p class="project-title">Spiral malen Spiel</p>
-    </a>
-    <a
-      href="https://pubs.rsc.org/en/content/articlelanding/2020/sm/d0sm00460j#!"
-      target="_blank" class="project project-tile"
-    >
-      <img class="project-image" src="./img1/statistic2.png?raw=true" alt="project-image"/>
-      <p class="project-title">Regressionsanalyse 1</p>
-    </a>
-    
-    <a href="https://www.nature.com/articles/s42005-018-0025-4/"
-      target="_blank" class="project project-tile"
-    >
-      <img class="project-image" src="./img1/statistic1.png?raw=true" alt="project"/>
-      <p class="project-title">Regressionsanalyse 2</p>
-    </a>
-    <a
-      href="https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/slct.202003940"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="./img1/tracking.png?raw=true"
-        alt="project"
-      />
-      <p class="project-title">
-      	Objekte Erkennung und Verfolgung
-      </p>
-    </a>
-    <a
-      href="https://github.com/limlleonard/project_personal/tree/main/schule2_trigonometry"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="./img1/trigonometrie.png?raw=true"
-        alt="project"
-      />
-      <p class="project-title">
-        <!-- <span class="code">&lt;</span> -->
-        Trigonometrie Aufgaben App
-        <!-- <span class="code">&#47;&gt;</span> -->
-      </p>
-    </a>
-    <a
-      href="https://github.com/limlleonard/project_personal/tree/main/schule3_construction"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="./img1/kegelschnitt.png?raw=true"
-        alt="project"
-      />
-      <p class="project-title">
-      	Kegelschnitt Konstruktion Anweisung
-      </p>
-    </a>
-    <a
-      href="https://github.com/limlleonard/project_personal/tree/main/g2_five_in_a_line"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="./img1/g2_five.png?raw=true"
-        alt="project"
-      />
-      <p class="project-title">
-      	Five in a row (Minimax algorithm)
-      </p>
-    </a>
-    <a href="https://github.com/limlleonard/project_personal/tree/main/g3_puzzle15"
-      target="_blank" class="project project-tile">
-      <img class="project-image" src="./img1/g3_p15.png?raw=true" alt="project"/>
-      <p class="project-title">Puzzle 15 (A star algorithm)</p>
-    </a>
-  </div>
+  <section id="projects" class="projects-section">
+    <h2 class="projects-section-header">Das sind meine Projekte</h2>
+    <div class="projects-grid">
+      <a href="https://deepppt.onrender.com" target="_blank" class="project project-tile">
+        <img class="project-image" src="./img1/deepppt.png" alt="project" />
+        <p class="project-title">PPT Übersetzer</p>
+      </a>
+      <a href="https://spiral-game.onrender.com" target="_blank" class="project project-tile">
+        <img class="project-image" src="./img1/spiral.png" alt="project" />
+        <p class="project-title">Spiral malen Spiel</p>
+      </a>
+      <a href="https://pubs.rsc.org/en/content/articlelanding/2020/sm/d0sm00460j#!" target="_blank"
+        class="project project-tile">
+        <img class="project-image" src="./img1/statistic2.png?raw=true" alt="project-image" />
+        <p class="project-title">Regressionsanalyse 1</p>
+      </a>
 
-  <!-- <a
-    href="https://github.com/limlleonard/"
-    class="btn btn-show-all"
-    target="_blank"
-    ><i></i>Code zeigen
-  </a> -->
-</section>
-<section id="cv" ></section>
-<section id="contact" class="contact-section">
-  <div class="contact-section-header">
-    <h2>Lass uns zusammenarbeiten</h2>
-  </div>
-  <div class="contact-links">
-    <a
-      href="https://github.com/limlleonard"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-github"></i> GitHub</a
-    >
-    <a
-      href="https://www.linkedin.com/in/menglin-li-666a7792/"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-github"></i> Linkedin</a
-    >
-    <a id="btn-email" title="menglin.li@bearingpoint.com" href="E-Mail: menglin.li@bearingpoint.com" class="btn contact-details"><i class="fas fa-at"></i> E-Mail
-    </a>
-    <a title="Tel: 0151 7219 79XX" href="Tel:0151 7219 79XX" class="btn contact-details"
-      ><i class="fas fa-mobile-alt"></i> Ruf mich an</a
-    >
-  </div>
-</section>
+      <a href="https://www.nature.com/articles/s42005-018-0025-4/" target="_blank" class="project project-tile">
+        <img class="project-image" src="./img1/statistic1.png?raw=true" alt="project" />
+        <p class="project-title">Regressionsanalyse 2</p>
+      </a>
+      <a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/slct.202003940" target="_blank"
+        class="project project-tile">
+        <img class="project-image" src="./img1/tracking.png?raw=true" alt="project" />
+        <p class="project-title">
+          Objekte Erkennung und Verfolgung
+        </p>
+      </a>
+      <a href="https://github.com/limlleonard/project_personal/tree/main/schule2_trigonometry" target="_blank"
+        class="project project-tile">
+        <img class="project-image" src="./img1/trigonometrie.png?raw=true" alt="project" />
+        <p class="project-title">
+          <!-- <span class="code">&lt;</span> -->
+          Trigonometrie Aufgaben App
+          <!-- <span class="code">&#47;&gt;</span> -->
+        </p>
+      </a>
+      <a href="https://github.com/limlleonard/project_personal/tree/main/schule3_construction" target="_blank"
+        class="project project-tile">
+        <img class="project-image" src="./img1/kegelschnitt.png?raw=true" alt="project" />
+        <p class="project-title">
+          Kegelschnitt Konstruktion Anweisung
+        </p>
+      </a>
+      <a href="https://github.com/limlleonard/project_personal/tree/main/g2_five_in_a_line" target="_blank"
+        class="project project-tile">
+        <img class="project-image" src="./img1/g2_five.png?raw=true" alt="project" />
+        <p class="project-title">
+          Five in a row (Minimax algorithm)
+        </p>
+      </a>
+      <a href="https://github.com/limlleonard/project_personal/tree/main/g3_puzzle15" target="_blank"
+        class="project project-tile">
+        <img class="project-image" src="./img1/g3_p15.png?raw=true" alt="project" />
+        <p class="project-title">Puzzle 15 (A star algorithm)</p>
+      </a>
+    </div>
 
-<!-- <footer>
-  <p>
-  	Zöge nicht, mich zu kontaktieren.
-  </p>
-</footer> -->
+    <!-- <a
+      href="https://github.com/limlleonard/"
+      class="btn btn-show-all"
+      target="_blank"
+      ><i></i>Code zeigen
+    </a> -->
+  </section>
+  <section id="cv" class="cv-section">
+    <div class="container-cv">
+      <h2>Curriculum vitae</h2>
+      <div class="container-cv">
+        <h3>Berufliche Erfahrungen</h3>
+        <table>
+          <thead>
+            <tr>
+              <th class="left">05/2022 - derzeit</th>
+              <th class="right">Technical Consultant</th>
+            </tr>
+          </thead>
+          <tr>
+            <td></td>
+            <td>BearingPoint GmbH</td>
+          </tr>
+          <tr class="empty-row"></tr>
+          <tr>
+            <td>Projekte:</td>
+            <td class="toggle" onclick="toggleRows(this, 5)" title="Klicken zu expandieren">KI-basierte Anti-Geldwäsche Optimierung <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Entwicklung eines Klassifikationsalgorithmus zur Kundensegmentierung</td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Bereinigung und Transformation von Finanztransaktionsdaten</td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Statistische Analyse und Visualisierung von Transaktionsdaten</td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Erstellung neuer Geldwäsche-Indizien durch die Anwendung eines ML Modells</td>
+          </tr>
+          <tr class="empty-row hidden"></tr>
+          <tr>
+            <td></td>
+            <td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">Entwicklung eines Ausschreibungstools <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td>- Entwicklung einer KI-basierten Applikation zur automatischen Identifikation von bestimmten
+              öffentlichen Ausschreibungen inklusive Ausgabe einer inhaltlichen Zusammenfassung</td>
+          </tr>
+          <tr class="empty-row hidden"></tr>
+          <tr>
+            <td></td>
+            <td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">CodeOrigin <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Entwicklung eines Algorithmus zur automatischen Quellcode-Identifikation</td>
+          </tr>
+          <tr class="empty-row hidden"></tr>
+          <tr>
+            <td></td>
+            <td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">Generative AI Tool <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Entwicklung der Benutzeroberfläche und der Flask-API eines generativen AI Tools</td>
+          </tr>
+          <tr class="empty-row hidden"></tr>
+          <tr>
+            <td></td>
+            <td class="toggle" onclick="toggleRows(this, 1)" title="Klicken zu expandieren">PowerPoint Übersetzer <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Entwicklung einer Webapp zur automatischen Übersetzung von PowerPoint-Unterlagen auf Azure</td>
+          </tr>
+          <tr class="empty-row"></tr>
+          <tr>
+            <td class="fett">02/2021 - 04/2022</td>
+            <td class="fett">Mathematik- und Physiklehrer</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Freie Waldorfschule Wolfsburg</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> - Entwicklung von Hausaufgaben-Apps, die Anleitungen für Schüler zum selbstständigen Üben generieren können</td>
+          </tr>
+          <tr class="empty-row"></tr>
+          <tr>
+            <td class="fett">08/2020 - 01/2021</td>
+            <td class="fett">Mathematik- und Physiklehrer</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Freie Schule Prerow</td>
+          </tr>
+          <tr class="empty-row"></tr>
+        </table>
+      </div>
+      <div class="container-cv">
+        <h3>Akademischer Werdegang</h3>
+        <table>
+          <thead>
+            <tr>
+              <th class="left">04/2014 - 12/2019</th>
+              <th class="right">Doktorand und wissenschaftlicher Mitarbeiter</th>
+            </tr>
+          </thead>
+          <tr>
+            <td></td><td>Experimentalphysik, Universität des Saarlandes, Deutschland</td>
+          </tr>
+          <tr class="empty-row"></tr>
+          <tr>
+            <td>Projekt:</td><td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">Verhalten kleiner schwimmender Tropfen zur Beschreibung von Bakterienbewegungen und -schwimmechanismen <span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Bildbearbeitung und Objekt suchen</td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Datenauswertung, Statistik und Regressionsanalyse</td>
+          </tr>
+          <tr class="empty-row"></tr>
+          <tr>
+          <tr>
+            <td class="fett">09/2011 - 03/2014</td>
+            <td class="fett">Master Ingenieurwesen Biomedical Engineering</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>School of Life Science, Beijing Institute of Technology, China</td>
+          </tr>
+          <tr class="empty-row"></tr>
+          <tr>
+            <td>Projekt:</td><td class="toggle" onclick="toggleRows(this, 2)" title="Klicken zu expandieren">Untersuchung von Peptiden mit hoher Affinität zur Tumormarkierung<span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Biologische Daten sammeln und statistisch auswerten</td>
+          </tr>
+          <tr class="empty-row hidden"></tr>
+          <tr>
+            <td></td><td class="toggle" onclick="toggleRows(this, 1)" title="Klicken zu expandieren">Optische Zellzähler basierend auf Mikrofluidik<span class="triangle">&#9662;</span></td>
+          </tr>
+          <tr class="hidden">
+            <td></td>
+            <td> - Simulation optischer Phänomene</td>
+          </tr>
+          <tr class="empty-row"></tr>
+          <tr>
+            <td class="fett">09/2007 - 07/2011</td>
+            <td class="fett">Bachelor Ingenieurwesen Biomedical Engineering</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Department of Biomedical Engineering, Tianjin Medical University, China</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> - Elektrotechnik und Biomedizin</td>
+          </tr>
+        </table>
+      </div>
+      <h3>Fertigkeiten und Kenntnisse</h3>
+      <div class=""></div>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Lass uns zusammenarbeiten</h2>
+    </div>
+    <div class="contact-links">
+      <a href="https://github.com/limlleonard" target="_blank" class="btn contact-details"><i class="fab fa-github"></i>
+        GitHub</a>
+      <a href="https://www.linkedin.com/in/menglin-li-666a7792/" target="_blank" class="btn contact-details"><i
+          class="fab fa-github"></i> Linkedin</a>
+      <a id="btn-email" title="menglin.li@bearingpoint.com" href="E-Mail: menglin.li@bearingpoint.com"
+        class="btn contact-details"><i class="fas fa-at"></i> E-Mail
+      </a>
+      <a title="Tel: 0151 7219 79XX" href="Tel:0151 7219 79XX" class="btn contact-details"><i
+          class="fas fa-mobile-alt"></i> Ruf mich an</a>
+    </div>
+  </section>
+
+  <!-- <footer>
+    <p>
+      Zöge nicht, mich zu kontaktieren.
+    </p>
+  </footer> -->
+  <script src="script.js"></script>
+</body>
+</html>
