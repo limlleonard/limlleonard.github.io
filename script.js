@@ -75,4 +75,4 @@ function createSkillBars(id1) {
 }
 
 // Call the function to create skill bars
-createSkillBars('table-skill');
+// createSkillBars('table-skill');
