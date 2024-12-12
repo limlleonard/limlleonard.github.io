@@ -1,78 +1,76 @@
-function toggleRows(cell, rowCount) {
-  const row = cell.closest('tr');
-  let nextRow = row.nextElementSibling;
-  let rowsToggled = 0;
-
-  while (nextRow && rowsToggled < rowCount) {
-      nextRow.classList.toggle('hidden');
-      nextRow = nextRow.nextElementSibling;
-      rowsToggled++;
-  }
-
-  // const triangle = cell.querySelector('.triangle');
-  // if (triangle) {
-  //     if (triangle.classList.contains('hidden-triangle')) {
-  //         triangle.classList.remove('hidden-triangle');
-  //         cell.innerHTML = cell.innerHTML.replace(' &#9662;', ''); // Remove the added triangle
-  //         cell.insertAdjacentHTML('beforeend', ' <span class="triangle">&#9662;</span>'); // Add back the original triangle
-  //     } else {
-  //         triangle.classList.add('hidden-triangle');
-  //     }
-  // }
-}
-
-
-  // Dictionary of skills and their levels
-const skills = {
-    'Python': 9,
-    'HTML, CSS, JavaScript': 7,
-	'PHP':2,
-	'SQL':6,
-	'Bash':6,
-    'C/C++': 2,
-	'Azure DevOps': 4,
-	'Docker': 4,
-	'PowerBI': 4,
-	'Word, PowerPoint, Excel':7
+// because of same source rule, it is not possible to add fetch translations from json files
+const translations = {
+    en: {
+        welcome: "Welcome",
+        projects: "Projects",
+        cv: "CV",
+        contact: "Contact",
+        hello: "Hello, I am Menglin Li",
+        developer: "A Python Developer",
+        h2Project: "Here are my projects",
+        together:"Let us work together",
+        call:"Call me",
+        // Add more translations for all content
+    },
+    de: {
+        welcome: "Willkommen",
+        projects: "Projekte",
+        cv: "CV",
+        contact: "Kontakt",
+        hello: "Hallo, Ich bin Menglin Li",
+        developer: "Ein Python Entwickler",
+        h2Project:"Das sind meine Projekte",
+        together:"Lass uns zusammenarbeiten",
+        call:"Ruf mich an",
+        // Add more translations
+    }
 };
-// Function to create skill bars based on the skill level
-function createSkillBars(id1) {
-    const table = document.getElementById(id1);
-    let row;
-    let count = 0;
-    for (const [skillName, skillLevel] of Object.entries(skills)) {
-        // Create a new row every two skills
-        if (count % 2 === 0) {
-            row = document.createElement('tr');
-            table.appendChild(row);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const switchButton = document.getElementById("language-switch");
+    let currentLanguage = "de"; // Default language
+
+    function updateLanguage(language) {
+        currentLanguage = language;
+        switchButton.textContent = language === "en" ? "DE" : "EN";
+        // Find all elements with translatable content
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+            const key = el.getAttribute("data-i18n");
+            el.textContent = translations[language][key] || key;
+        });
+        // Display page1 and hide page2 when de is selected
+        const page1=document.getElementById('page1');
+        const page2=document.getElementById('page2');
+        if (language==="en") {
+            page1.style.display='none';
+            page2.style.display='grid';
+        } else if (language==="de") {
+            page1.style.display='grid';
+            page2.style.display='none';
         }
-
-        const skillCell = document.createElement('td');
-		skillCell.className='skillCell'
-        const levelCell = document.createElement('td');
-		levelCell.className='levelCell'
-
-        skillCell.innerHTML = `${skillName}`;
-        levelCell.innerHTML = `
-            <div class="skill-bar-container">
-                <div class="skill-bar" style="width: ${skillLevel * 10}%"></div>
-            </div>
-        `;
-
-        row.appendChild(skillCell);
-        row.appendChild(levelCell);
-
-        count++;
+        // Store the user's preference in localStorage
+        // localStorage.setItem("language", language);
     }
 
-    // Handle case where there's an odd number of skills
-    if (count % 2 !== 0) {
-        const emptyCell1 = document.createElement('td');
-        const emptyCell2 = document.createElement('td');
-        row.appendChild(emptyCell1);
-        row.appendChild(emptyCell2);
+    // Load the saved language preference
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+        updateLanguage(savedLanguage);
     }
+
+    // Toggle the language when the button is clicked
+    switchButton.addEventListener("click", () => {
+        const newLanguage = currentLanguage === "en" ? "de" : "en";
+        updateLanguage(newLanguage);
+    });
+});
+
+function loadComponent(id, url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data;
+        });
 }
 
-// Call the function to create skill bars
-// createSkillBars('table-skill');
+// loadComponent('navbar', './section/navbar.html');

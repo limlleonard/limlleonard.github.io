@@ -1,0 +1,101 @@
+@import url('nav.css');
+@import url('welcome.css');
+@import url('project.css');
+@import url('cv.css');
+
+:root {
+	--main-white: #f0f0f0;
+	--bp-purple: #b931be;
+	/* b931be 6C03A8 */
+	--bp-blue-light: #29D5FF;
+	--bg1: #A6BA6D;
+	--bg2: #647891;
+	--height-nav: 4em;
+	--main-gray: #303841;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	/* border: 1px solid red; */
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	scroll-behavior: smooth;
+	font-weight: 400;
+	line-height: 1.4;
+	color: var(--main-white);
+	overflow-x: hidden;
+	cursor: default;
+}
+
+h1,
+h2 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3.2rem;
+}
+
+h2 {
+	font-size: 2.6rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-white);
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+/* contact */
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	/* padding: 0 2rem; */
+	background: var(--main-gray);
+}
+
+.contact-section-header>h2 {
+	font-size: 4em;
+}
+
+.contact-links {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 4em;
+	flex-wrap: wrap;
+}
+
+.contact-details {
+	font-size: 1.8em;
+	text-shadow: 2px 2px 1px #1f1f1f;
+	transition: transform 0.3s ease-out;
+	margin: 0 2rem;
+}
+
+.contact-details:hover {
+	transform: translateY(8px);
+	background: var(--bp-blue-light);
+}
