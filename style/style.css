@@ -5,9 +5,11 @@
 
 :root {
 	--main-white: #f0f0f0;
-	--bp-purple: #b931be;
 	/* b931be 6C03A8 */
 	--bp-blue-light: #29D5FF;
+	--height-nav: 4em;
+	--main-gray: #303841;
+
 	--bg1: #A6BA6D;
 	--bg2: #647891;
 	--height-nav: 4em;
