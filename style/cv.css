@@ -3,6 +3,12 @@
 	padding: 10rem 10%;
 	background: LightCyan;
 	color: black;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh; */
 }
 
 .cv-section h3 {
@@ -12,207 +18,12 @@
 
 /* cv */
 .page {
-	width: 210mm;
-	height: 298mm;
+    display: block;
+	width: 212mm;
+	height: 311mm;
 	margin: auto;
-	page-break-after: always;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-}
-
-.page .left {
-	position: relative;
-	background: indigo;
-	padding: 35px 25px;
-}
-
-.ctn-foto-name {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: 20px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.ctn-foto-name .ctn-foto1 {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	overflow: hidden;
-}
-
-.ctn-foto-name .ctn-foto1 img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-}
-
-.ctn-foto-name h2 {
-	color: white;
-	font-size: 1.2rem;
-	margin-top: 10px;
-	text-align: center;
-	font-weight: 600;
-	line-height: 1.5;
-}
-
-.ctn-foto-name h2 span {
-	font-size: 0.8rem;
-	font-weight: 300;
-}
-
-.ctn-ul {
-	padding-top: 15px;
-}
-
-.ctn-ul .title {
-	color: white;
-	font-weight: 600;
-	margin-bottom: 10px;
-	font-size: 1.1rem;
-}
-
-.ctn-ul ul {
-	position: relative;
-}
-
-.ctn-ul ul li {
-	position: relative;
-	list-style: none;
-	margin: 10px 0;
-}
-
-.contact ul li {
-	display: flex;
-}
-
-.ctn-ul ul li .icon {
-	/* display: inline-block; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 20px;
-	margin-right: 5px;
-	font-size: 1rem;
-	color: aqua;
-}
-
-.ctn-ul ul li,
-.ctn-ul span {
-	color: white;
-	font-size: 11pt;
-	font-weight: 300;
-	line-height: 1.2;
-}
-
-.bildung ul li {
-	margin-bottom: 10px;
-}
-
-.bildung h5 {
-	color: aqua;
-	font-weight: 500;
-}
-
-.bildung h4:nth-child(2) {
-	color: white;
-	font-weight: 500;
-}
-
-.bildung h4 {
-	color: white;
-	font-weight: 200;
-	line-height: 1.4;
-}
-
-.page .right {
-	position: relative;
-	background: white;
-	padding: 35px;
-}
-
-.skills {
-	margin-bottom: 2em
-}
-
-.right1 .title2 {
-	font-weight: 600;
-	/* margin-bottom: 10px; */
-	font-size: 14pt;
-	color: indigo;
-	text-align: left
-}
-
-.skills ul {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 5px 10px;
-	list-style: none;
-}
-
-.skills .text {
-	margin-bottom: 10px;
-}
-
-.skills .percent {
-	position: relative;
-	width: 100%;
-	height: 8px;
-	background: #bbb;
-	display: block;
-	margin-bottom: 5px;
-	margin-top: 2px;
-}
-
-.skills .percent div {
-	position: absolute;
-	height: 100%;
-	background: aqua;
-}
-
-.erfahrung {
-	display: flex;
-	flex-direction: column;
-}
-
-.erfahrung h3 {
-	font-size: 12pt;
-	font-weight: 400;
-	padding-bottom: 5px;
-	border-bottom: 1px solid black;
-}
-
-.erfahrung h3 .stelle {
-	color: navy;
-	font-weight: 600;
-	margin-right: 3pt;
-}
-
-.erfahrung .zeit {
-	background-color: indigo;
-	color: white;
-	margin-left: auto;
-	/* margin-bottom: -1em; */
-}
-
-.erfahrung .project-cv {
-	margin-bottom: 1em;
-}
-
-.erfahrung .project-cv ul {
-	padding-left: 1em;
-	line-height: 1.4;
-	list-style-type: disc;
-}
-
-.erfahrung .project-cv ul li::marker {
-	color: indigo;
-	font-size: 1em;
+	/* page-break-after: always; */
+	border: none;
 }
 
 #page2 {
