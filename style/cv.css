@@ -1,14 +1,8 @@
 
 .cv-section {
 	padding: 10rem 10%;
-	background: LightCyan;
+	background: lightblue;
 	color: black;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	height: 100vh; */
 }
 
 .cv-section h3 {
@@ -19,8 +13,8 @@
 /* cv */
 .page {
     display: block;
-	width: 212mm;
-	height: 311mm;
+	width: 210mm;
+	height: 300mm;
 	margin: auto;
 	/* page-break-after: always; */
 	border: none;
