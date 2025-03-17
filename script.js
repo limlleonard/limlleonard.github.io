@@ -9,10 +9,10 @@ const translations = {
         cv: "CV",
         contact: "Contact",
         hello: "Hello, I am Menglin Li",
-        developer: "A Python Developer",
+        developer: "A Full-Stack Developer",
         h2Project: "Here are my projects",
-        together:"Let us work together",
-        call:"Call me",
+        together: "Let us work together",
+        call: "Call me",
         // Add more translations for all content
     },
     de: {
@@ -21,12 +21,12 @@ const translations = {
         cv: "CV",
         contact: "Kontakt",
         hello: "Hallo, Ich bin Menglin Li",
-        developer: "Ein Python Entwickler",
-        h2Project:"Das sind meine Projekte",
-        together:"Lass uns zusammenarbeiten",
-        call:"Ruf mich an",
+        developer: "Ein Full-Stack Entwickler",
+        h2Project: "Das sind meine Projekte",
+        together: "Lass uns zusammenarbeiten",
+        call: "Ruf mich an",
         // Add more translations
-    }
+    },
 };
 
 function updateLanguage(language) {
@@ -38,14 +38,14 @@ function updateLanguage(language) {
         e.textContent = translations[language][key] || key;
     });
     // Display page1 and hide page2 when de is selected
-    const page1=document.getElementById('page1');
-    const page2=document.getElementById('page2');
-    if (language==="en") {
-        page1.style.display='none';
-        page2.style.display='block';
-    } else if (language==="de") {
-        page1.style.display='block';
-        page2.style.display='none';
+    const page1 = document.getElementById("page1");
+    const page2 = document.getElementById("page2");
+    if (language === "en") {
+        page1.style.display = "none";
+        page2.style.display = "block";
+    } else if (language === "de") {
+        page1.style.display = "block";
+        page2.style.display = "none";
     }
     // Store the user's preference in localStorage
     // localStorage.setItem("language", language);
@@ -71,14 +71,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function downloadPDF() {
-    const element = document.getElementById('page1');
+    const element = document.getElementById("page1");
     // const element = document.body;
     const opt = {
         margin: 0,
-        filename: 'My_CV.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
+        filename: "My_CV.pdf",
+        image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
     };
     html2pdf().from(element).set(opt).save();
 }
